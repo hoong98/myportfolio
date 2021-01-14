@@ -18,7 +18,6 @@ body{
 
 nav{
     padding:1rem 1.5rem;    
-   
 }
 
 ul{
@@ -31,9 +30,7 @@ a{
 
 .active{
     display: inline-block !important;
-}
-.active i{
-   color: crimson;
+    color: crimson !important;
 }
 /* mobile */
 .nav-header{
@@ -45,7 +42,7 @@ a{
 .nav-header .title{
     font-family: "Inkburrow";
     color:white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     width:200px;
 }
 
@@ -259,13 +256,13 @@ a{
     }
 
     .nav-header .title{
-        font-size: 2rem;
+        font-size: 3.5rem;
         margin-left: 4rem;
     }
 
     .nav-header .title span{
         color:crimson;
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
 
     .nav-header .nav-toggle{
