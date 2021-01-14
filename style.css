@@ -46,6 +46,7 @@ a{
     font-family: "Inkburrow";
     color:white;
     font-size: 1.5rem;
+    width:200px;
 }
 
 .nav-header .title span{
@@ -197,6 +198,7 @@ a{
 #about{
     min-height:100vh;
     padding:20px;
+    
 }
 
 .about-title{
@@ -207,6 +209,7 @@ a{
     width: 150px;
     padding:10px;
     margin: 0 auto;
+    width:200px;
 }
 
 .about-title span{
@@ -223,6 +226,13 @@ a{
 
 .about-desc{
     padding:20px;
+}
+
+.about-desc .link{
+    color: crimson;
+}
+.about-desc .link:hover{
+    color: rgb(255, 40, 60);
 }
 
 .about-desc p{
@@ -315,7 +325,7 @@ a{
   background-color: transparent; 
   cursor: pointer; 
   font-size: 2rem;
-  color:white;
+  color:crimson;
 }
 
 #myBtn:hover i{
