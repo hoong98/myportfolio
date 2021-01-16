@@ -74,8 +74,55 @@ a{
     padding:10px 0;
 }
 
-.show-nav{
-    height: auto;
+@keyframes fadeIn {
+    from{
+       overflow: hidden;
+       height: 0;
+       opacity: 0;
+    }
+    
+    30%{
+        height: 50px;
+    }
+    
+    75%{
+        height: 130px;
+    }
+    to{
+        overflow: visible;
+        height: auto;
+        opacity: 1;
+    }
+}
+
+.fadeIn{
+    animation: fadeIn 0.5s linear forwards;
+}
+
+@keyframes fadeOut {
+    from{
+       
+        overflow: visible;
+        height: auto;
+        opacity: 1;
+    }
+    
+    30%{
+        height: 130px;
+    }
+    
+    60%{
+        height: 50px;
+    }
+    to{
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+    }
+}
+
+.fadeOut{
+    animation: fadeOut 0.5s linear forwards;
 }
 
 .nav-container .nav-list li{
@@ -98,7 +145,7 @@ a{
 
 #project{
     min-height:100vh;
-    padding:10px;
+    padding:20px;
 }
 
 .project-title{
