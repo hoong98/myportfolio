@@ -29,29 +29,29 @@ projectContainer.addEventListener('click', function (e) {
 })
 
 togglerBtn.addEventListener('click', function () {
-    if (navContainer.classList.contains('fadeIn')) {
-        navContainer.classList.remove('fadeIn')
-        navContainer.classList.add('fadeOut')
+    if (navContainer.classList.contains('show')) {
+        navContainer.classList.remove('show')
+        navContainer.classList.add('close')
         setTimeout(() => {
-            navContainer.classList.remove('fadeOut')
-        }, 500)
+            navContainer.classList.remove('close')
+        }, 600)
     } else {
-        navContainer.classList.add('fadeIn')
-        navContainer.classList.remove('fadeOut')
+        navContainer.classList.add('show')
+        navContainer.classList.remove('close')
     }
 })
 
 navItems.forEach(navItem => {
     navItem.addEventListener('click', function () {
-        if (navContainer.classList.contains('fadeIn')) {
-            navContainer.classList.remove('fadeIn')
-            navContainer.classList.add('fadeOut')
+        if (navContainer.classList.contains('show')) {
+            navContainer.classList.remove('show')
+            navContainer.classList.add('close')
             setTimeout(() => {
-                navContainer.classList.remove('fadeOut')
-            }, 500)
+                navContainer.classList.remove('close')
+            }, 600)
         } else {
-            navContainer.classList.add('fadeIn')
-            navContainer.classList.remove('fadeOut')
+            navContainer.classList.add('show')
+            navContainer.classList.remove('close')
         }
     })
 })
